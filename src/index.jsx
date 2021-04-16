@@ -6,6 +6,10 @@ import Pai from './Pai'
 import Pai2 from './Pai2'
 import Filho from './Filho'
 
+import Bike from './Bike'
+import Car from './Car'
+import Owner from './Owner'
+
 ReactDom.render(
     <div>
         <Pai nome="Marcelo" sobrenome="Faria"/>
@@ -23,6 +27,11 @@ ReactDom.render(
             <Filho nome="Filho4"/>
             <Filho nome="Filho5"/>
         </Pai2>
+
+        <Owner dono="Carlos" ano="2019" marca="Ferrari">
+            <Car motor="1.8" bateria="Moura"/>
+            <Bike aro="29" quadro="19"/>
+        </Owner>
     </div>
     , document.getElementById("root")
 )
